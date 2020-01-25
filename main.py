@@ -16,11 +16,12 @@ while not quit:
         else:    
             number = int(number)
             count = count + 1
-            print("Nope, sorry.")  
+            if number != random_number:
+                print("Nope, sorry.")  
             if number > random_number:
-                print("Too high")
+                 print("Too high")
             elif number < random_number:
-                print("Too low")          
+                 print("Too low")          
     print("You finally got it right!")
     print("It only took you {} tries".format(count))
     try_again = input("\nWould you like to try again for a better score (yes or...yes)?")
